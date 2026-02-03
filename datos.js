@@ -13,12 +13,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1",
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -30,12 +32,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -47,12 +51,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2",
                 "puntuacion": -10,  
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -64,12 +70,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -81,12 +89,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -98,12 +108,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -115,12 +127,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -132,12 +146,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -149,12 +165,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -166,12 +184,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -183,12 +203,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -200,12 +222,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -217,12 +241,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -234,12 +260,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -251,12 +279,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -268,12 +298,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -285,12 +317,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -302,12 +336,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -319,12 +355,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -336,12 +374,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -353,12 +393,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -370,12 +412,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -387,12 +431,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -404,12 +450,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -421,12 +469,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -438,12 +488,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -455,12 +507,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -472,12 +526,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },
@@ -489,12 +545,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },    
@@ -506,12 +564,14 @@ export const datos ={
             {
                 "respuesta":"respuesta 1", 
                 "puntuacion": 10, 
-                "explicacion":"explicacion 1"
+                "explicacion":"explicacion 1",
+                "imagen":""
             },
             {
                 "respuesta":"respuesta 2", 
                 "puntuacion": -10, 
-                "explicacion":"explicacion 2"
+                "explicacion":"explicacion 2",
+                "imagen":""
             }
         ]
     },

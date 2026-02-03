@@ -18,6 +18,7 @@ function mostrarPagina(paginaKey){
     if(!fin){
         let contTexto = document.getElementById("contenedorTexto");
         let h2 = document.createElement("h2");
+        h2.className = "textoPregunta";
         h2.textContent = pagina.texto;
         contTexto.appendChild(h2);
 
@@ -25,6 +26,7 @@ function mostrarPagina(paginaKey){
         if(paginaKey === "pagina0"){
             let botonSiguiente = document.createElement("button");
             botonSiguiente.textContent = "Empezar";
+            botonSiguiente.className = "botonEmpezar";
             botonSiguiente.onclick = function(){
                 paginaActual = pagina.siguiente;
                 limpiarPagina();
@@ -36,8 +38,18 @@ function mostrarPagina(paginaKey){
             
             for (const respuesta of pagina.respuestas) {
                 let posicion = posicionRespuesta;
+
+                let divRespuesta = document.createElement("div");
+                divRespuesta.className = "divRespuesta";
+
+                let img = document.createElement("img");
+                img.src = respuesta.imagen;
+                img.className = "imagenRespuesta";
+                divRespuesta.appendChild(img);
+
                 let botonRespuesta = document.createElement("button");
                 botonRespuesta.textContent = respuesta.respuesta;
+                botonRespuesta.className = "botonRespuesta";
                 botonRespuesta.onclick = function(){
                     puntuacionFinal += respuesta.puntuacion;
                     console.log(puntuacionFinal);
@@ -45,7 +57,9 @@ function mostrarPagina(paginaKey){
                     limpiarPagina();
                     monstrarPaginaInfo(paginaActual,posicion);
                 };
-                contRespuestas.appendChild(botonRespuesta);
+                divRespuesta.appendChild(botonRespuesta);
+
+                contRespuestas.appendChild(divRespuesta);
                 posicionRespuesta++;
             }
         }
@@ -68,10 +82,12 @@ function monstrarPaginaInfo(paginaKey, posicionRespuesta){
 
     h2.textContent = pagina.respuestas[posicionRespuesta].explicacion;
     contTexto.appendChild(h2);
+    h2.className = "textoExplicacion";
 
     let contRespuestas = document.getElementById("contenedorRespuestas");   
     let botonSiguiente = document.createElement("button");
     botonSiguiente.textContent = "Continuar";
+    botonSiguiente.className = "botonSiguiente";
     botonSiguiente.onclick = function(){
         paginaActual = pagina.siguiente;
         limpiarPagina();
@@ -119,10 +135,12 @@ function comprobarFinal(){
 
         let h2 = document.createElement("h2");
         h2.textContent = textoFinal;
+        h2.className = "textoFinal";
         contTexto.appendChild(h2);
 
         let contRespuestas = document.getElementById("contenedorRespuestas");   
         let botonReiniciar = document.createElement("button");
+        botonReiniciar.className = "botonReiniciar";
         botonReiniciar.textContent = "Volver a empezar";
         botonReiniciar.onclick = function(){
             paginaActual = "pagina0";
