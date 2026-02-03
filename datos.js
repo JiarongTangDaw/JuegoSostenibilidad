@@ -6,6 +6,9 @@ export const datos = {
         "respuestas": []
     },
     "pagina1": {
+        "p":`Hoy en día, el mundo sigue dependiendo en gran medida de los combustibles fósiles (petróleo, gas y carbón), aportando cerca del 80% de la energía mundial que se consume, usada principalmente en transporte, industria y calefacción. Mientras tanto, las energías renovables van ganando terreno, especialmente en la generación de electricidad, pero ese avance no ha logrado revertir la tendencia del aumento de emisiones globales.
+            Tu primera gran decisión marcará el rumbo energético de las próximas décadas.
+            `,
         "texto": "¿Cómo abordas la transición energética?",
         "siguiente": "pagina2",
         "anio": 2030,
@@ -13,18 +16,21 @@ export const datos = {
             {
                 "respuesta": "Transición rápida a energías renovables y cierre progresivo de fósiles.",
                 "puntuacion": 10,
-                "explicacion": "explicacion 1",
+                "explicacion": "Se impulsa con fuerza el despliegue de energías limpias y empieza el cierre progresivo de varias plantas que funcionaban con combustibles fósiles. El aire se vuelve más limpio y disminuye, en parte, la dependencia de energía importada. Crecen las oportunidades laborales en el sector renovable, pero la transición no es fácil: en zonas que viven del carbón, el petróleo o el gas surgen protestas por la pérdida de actividad y se reclaman planes de apoyo y reconversión.",
                 "imagen": "style/imgs/1.1.png"
             },
             {
                 "respuesta": "Mantener combustibles fósiles mientras se desarrollan nuevas tecnologías",
                 "puntuacion": -10,
-                "explicacion": "explicacion 2",
+                "explicacion": "La energía se mantiene estable y se evitan cambios bruscos a corto plazo, pero las emisiones siguen subiendo. Con ello, se agravan las olas de calor y las temporadas de incendios, y los efectos del clima empiezan a traducirse en una factura cada vez mayor: más gastos en emergencias, daños materiales y presión sobre la economía.",
                 "imagen": "style/imgs/1.2.png"
             }
         ]
     },
     "pagina2": {
+        "p":`Con una población que se acerca a 8,5–8,6 mil millones en 2030, la demanda de alimentos sigue aumentando y crece la presión por producir más. Ante este escenario, algunos países plantean ampliar las tierras de cultivo ocupando bosques y otros ecosistemas naturales. Sin embargo, esta vía tiene un alto coste: la expansión agrícola ha sido responsable de casi el 90% de la deforestación mundial en las últimas décadas.
+            Debes decidir cómo alimentar al mundo sin agravar la crisis ambiental.
+            `,
         "texto": "texto de la pagina 2",
         "siguiente": "pagina3",
         "anio": 2031,
@@ -44,6 +50,7 @@ export const datos = {
         ]
     },
     "pagina3": {
+        "p":"",
         "texto": "texto de la pagina 3",
         "siguiente": "pagina4",
         "anio": 2032,
@@ -63,6 +70,7 @@ export const datos = {
         ]
     },
     "pagina4": {
+        "p":"",
         "texto": "texto de la pagina 4",
         "siguiente": "pagina5",
         "anio": 2033,
@@ -82,6 +90,7 @@ export const datos = {
         ]
     },
     "pagina5": {
+        "p":"",
         "texto": "texto de la pagina 5",
         "siguiente": "pagina6",
         "anio": 2034,
@@ -101,6 +110,7 @@ export const datos = {
         ]
     },
     "pagina6": {
+        "p":"",
         "texto": "texto de la pagina 6",
         "siguiente": "pagina7",
         "anio": 2035,
@@ -120,6 +130,7 @@ export const datos = {
         ]
     },
     "pagina7": {
+        "p":"",
         "texto": "texto de la pagina 7",
         "siguiente": "pagina8",
         "anio": 2036,
@@ -139,6 +150,7 @@ export const datos = {
         ]
     },
     "pagina8": {
+        "p":"",
         "texto": "texto de la pagina 8",
         "siguiente": "pagina9",
         "anio": 2037,
@@ -158,6 +170,7 @@ export const datos = {
         ]
     },
     "pagina9": {
+        "p":"",
         "texto": "texto de la pagina 9",
         "siguiente": "pagina10",
         "anio": 2038,
@@ -177,6 +190,7 @@ export const datos = {
         ]
     },
     "pagina10": {
+        "p":"",
         "texto": "texto de la pagina 10",
         "siguiente": "pagina11",
         "anio": 2039,
@@ -196,6 +210,7 @@ export const datos = {
         ]
     },
     "pagina11": {
+        "p":"",
         "texto": "texto de la pagina 11",
         "siguiente": "pagina12",
         "anio": 2040,

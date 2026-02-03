@@ -31,12 +31,34 @@ body {
     line-height: 1.4;
 }
 
+/* Timeline */
+.timeline {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    background-image: url("./imgs/timeline_bg.png");
+    margin-bottom: 2rem;
+}
+
+.timelineImg {
+    width: 70px;
+    height: 70px;
+    background: url("./imgs/icons/ICONO_C1_A.png");
+    border-radius: 100%;
+    transition: all ease-in-out 3s;
+}
+
+.timelineImg:hover {
+    transform: scale(2px);
+}
+
 /* Contenedor de respuestas */
 #contenedorRespuestas {
     display: flex;
-
     gap: 15px;
-    
 }
 
 /* Diseño de cada bloque de respuesta */

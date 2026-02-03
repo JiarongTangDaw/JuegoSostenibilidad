@@ -17,9 +17,12 @@ function mostrarPagina(paginaKey){
     
     if(!fin){
         let contTexto = document.getElementById("contenedorTexto");
+        let p = document.createElement("p");
         let h2 = document.createElement("h2");
         h2.className = "textoPregunta";
+        p.textContent = pagina.p;
         h2.textContent = pagina.texto;
+        contTexto.appendChild(p);
         contTexto.appendChild(h2);
 
         let contRespuestas = document.getElementById("contenedorRespuestas");
@@ -77,19 +80,30 @@ function limpiarPagina(){
 function monstrarPaginaInfo(paginaKey, posicionRespuesta){
     const pagina = datos[paginaKey];
     let contTexto = document.getElementById("contenedorTexto");
-    let h2 = document.createElement("h2");
+    let p = document.createElement("p");
+    let consecuencia = document.createElement("h2");
 
-    h2.textContent = pagina.respuestas[posicionRespuesta].explicacion;
-    contTexto.appendChild(h2);
-    h2.className = "textoExplicacion";
+    consecuencia.textContent = "Consecuencia:";
+    p.textContent = pagina.respuestas[posicionRespuesta].explicacion;
+    contTexto.appendChild(consecuencia);
+    contTexto.appendChild(p);
+    p.className = "textoExplicacion";
 
     /* inicio timeline */ 
-    let timeline = document.createElement("button");
-    timeline.textContent = "Ver Timeline";
-    timeline.className = "botonTimeline";
-    timeline.onclick = function(){
-        alert("Timeline: Año actual: " + pagina.anio);
+    let timeline = document.createElement("div");
+    timeline.style.background = "color:'white'";
+    timeline.className = "timeline";
+    contTexto.appendChild(timeline);
+    let counterImg = 1;
+    for (let index = 0; index < 9; index++) {
+        let img = document.createElement("img");
+        img.className = `timelineImg ${counterImg}`;
+        timeline.appendChild(img);
+        counterImg = counterImg +1;
     };
+    // timeline.onclick = function(){
+    //     alert("Timeline: Año actual: " + pagina.anio);
+    // };
     /* timeline fin */
 
     contTexto.appendChild(timeline);
