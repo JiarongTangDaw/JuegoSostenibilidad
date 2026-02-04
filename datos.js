@@ -16,13 +16,13 @@ export const datos ={
                 "respuesta":"Transición rápida a energías renovables y cierre progresivo de fósiles.",
                 "puntuacion": 10, 
                 "explicacion":"Se impulsa con fuerza el despliegue de energías limpias y empieza el cierre progresivo de varias plantas que funcionaban con combustibles fósiles. El aire se vuelve más limpio y disminuye, en parte, la dependencia de energía importada. Crecen las oportunidades laborales en el sector renovable, pero la transición no es fácil: en zonas que viven del carbón, el petróleo o el gas surgen protestas por la pérdida de actividad y se reclaman planes de apoyo y reconversión.",
-                "imagen":""
+                "imagen":"style/imgs/1.1.png"
             },
             {
                 "respuesta":"Mantener combustibles fósiles mientras se desarrollan nuevas tecnologías.", 
                 "puntuacion": -10, 
                 "explicacion":"La energía se mantiene estable y se evitan cambios bruscos a corto plazo, pero las emisiones siguen subiendo. Con ello, se agravan las olas de calor y las temporadas de incendios, y los efectos del clima empiezan a traducirse en una factura cada vez mayor: más gastos en emergencias, daños materiales y presión sobre la economía",
-                "imagen":""
+                "imagen":"style/imgs/1.2.png"
             }
         ]
     },
@@ -36,13 +36,13 @@ export const datos ={
                 "respuesta":"Agricultura sostenible y reducción del desperdicio.", 
                 "puntuacion": 10, 
                 "explicacion":"Se reduce la deforestación y mejoran los suelos agrícolas. La producción se vuelve más eficiente y aparecen nuevas tecnologías rurales que generan empleo.",
-                "imagen":""
+                "imagen":"style/imgs/2.1.png"
             },
             {
                 "respuesta":"Expandir cultivos y ganadería sobre nuevos territorios.", 
                 "puntuacion": -10, 
                 "explicacion":"Aumenta la producción a corto plazo, pero se acelera la pérdida de bosques y biodiversidad. Algunas regiones comienzan a sufrir erosión del suelo y cambios climáticos locales.",
-                "imagen":""
+                "imagen":"style/imgs/2.2.png"
             }
         ]
     },
@@ -56,13 +56,13 @@ export const datos ={
                 "respuesta":"Invertir en ahorro y reutilización de agua.", 
                 "puntuacion": 10, 
                 "explicacion":"Se instalan sistemas de ahorro y reciclaje que estabilizan el suministro. Cambian algunos hábitos de consumo, pero disminuyen tensiones por escasez.",
-                "imagen":""
+                "imagen":"style/imgs/3.1.png"
             },
             {
                 "respuesta":"Priorizar consumo urbano e industrial.",
                 "puntuacion": -10,  
                 "explicacion":"Las ciudades mantienen suministro, pero ecosistemas y zonas rurales sufren escasez creciente, generando conflictos y pérdidas agrícolas.",
-                "imagen":""
+                "imagen":"style/imgs/3.2.png"
             }
         ]
     },
@@ -76,13 +76,13 @@ export const datos ={
                 "respuesta": "respuesta 1",
                 "puntuacion": 10,
                 "explicacion": "explicacion 1",
-                "imagen": ""
+                "imagen": "style/imgs/4.1.png"
             },
             {
                 "respuesta": "respuesta 2",
                 "puntuacion": -10,
                 "explicacion": "explicacion 2",
-                "imagen": ""
+                "imagen": "style/imgs/4.2.png"
             }
         ]
     },
@@ -96,13 +96,13 @@ export const datos ={
                 "respuesta":"Fomentar dietas alternativas y nuevas proteínas.", 
                 "puntuacion": 10, 
                 "explicacion":"Disminuye la presión sobre tierras agrícolas y bajan emisiones. Nuevas industrias alimentarias generan empleo.",
-                "imagen":""
+                "imagen":"style/imgs/5.1.png"
             },
             {
                 "respuesta":"Mantener producción ganadera tradicional.", 
                 "puntuacion": -10, 
                 "explicacion":"La demanda mantiene la presión sobre ecosistemas y aumenta el coste ambiental de la producción.",
-                "imagen":""
+                "imagen":"style/imgs/5.2.png"
             }
         ]
     },
@@ -116,13 +116,13 @@ export const datos ={
                 "respuesta":"Transformar ciudades para resistir el clima futuro. ", 
                 "puntuacion": 10, 
                 "explicacion":"Disminuyen daños y mejora la calidad de vida urbana gracias a nuevas zonas verdes y sistemas de protección.",
-                "imagen":""
+                "imagen":"style/imgs/6.1.png"
             },
             {
                 "respuesta":"Reconstruir tras cada desastre.", 
                 "puntuacion": -10, 
                 "explicacion":"Aumentan evacuaciones y costes de reconstrucción tras desastres frecuentes.",
-                "imagen":""
+                "imagen":"style/imgs/6.2.png"
             }
         ]
     },
@@ -136,13 +136,13 @@ export const datos ={
                 "respuesta":"Crecimiento económico prioritario.", 
                 "puntuacion": -10, 
                 "explicacion":"Aumenta la actividad económica, pero también la presión ambiental.",
-                "imagen":""
+                "imagen":"style/imgs/7.2.png"
             },
             {
                 "respuesta":"Sistema mixto con compromisos voluntarios.", 
                 "puntuacion": 10, 
                 "explicacion":"Los cambios son moderados y desiguales entre regiones.",
-                "imagen":""
+                "imagen":"style/imgs/7.1.png"
             }
         ]
     },
@@ -156,13 +156,13 @@ export const datos ={
                 "respuesta":"Impulsar transporte público eléctrico y limitar vehículos contaminantes.", 
                 "puntuacion": 10, 
                 "explicacion":"Las ciudades invierten en transporte público limpio y carriles para bicicletas y peatones. La contaminación del aire disminuye y se reduce el ruido urbano. Al principio surgen protestas por restricciones al uso del coche, pero la movilidad se vuelve más eficiente y mejora la salud de la población.",
-                "imagen":""
+                "imagen":"style/imgs/8.1.png"
             },
             {
                 "respuesta":"Mantener el modelo actual y mejorar solo la eficiencia de vehículos.", 
                 "puntuacion": -10, 
                 "explicacion":"La mejora tecnológica reduce ligeramente el consumo de combustible, pero el número de vehículos sigue aumentando. Los atascos y la contaminación continúan afectando a grandes ciudades y aumentan los costes sanitarios relacionados con la mala calidad del aire.",
-                "imagen":""
+                "imagen":"style/imgs/8.2.png"
             }
         ]
     },
@@ -176,13 +176,13 @@ export const datos ={
                 "respuesta":"Lanzar un programa global de restauración ecológica.", 
                 "puntuacion": 10, 
                 "explicacion":"Se reforestan áreas degradadas y se recuperan humedales y costas naturales. Algunas especies comienzan a regresar y disminuyen inundaciones y erosión del suelo. Se crean empleos en restauración ambiental y turismo de naturaleza.",
-                "imagen":""
+                "imagen":"style/imgs/9.1.png"
             },
             {
                 "respuesta":"Priorizar infraestructuras y desarrollo económico.", 
                 "puntuacion": -10, 
                 "explicacion":"Se construyen nuevas infraestructuras y zonas industriales que generan empleo rápido, pero continúan degradándose ecosistemas clave. Algunas regiones sufren más inundaciones y pérdida de suelos fértiles, aumentando costes a largo plazo.",
-                "imagen":""
+                "imagen":"style/imgs/9.2.png"
             }
         ]
     },
@@ -196,13 +196,13 @@ export const datos ={
                 "respuesta":"Promover consumo responsable y economía circular obligatoria.", 
                 "puntuacion": 10, 
                 "explicacion":"Aumenta la reparación y reutilización de productos, reduciendo residuos y extracción de recursos. Surgen nuevos empleos en reciclaje y diseño sostenible. La población cambia lentamente sus hábitos y disminuye la presión ambiental global.",
-                "imagen":""
+                "imagen":"style/imgs/10.1.png"
             },
             {
                 "respuesta":"Mantener el modelo de consumo actual con mejoras voluntarias.", 
                 "puntuacion": -10, 
                 "explicacion":"El consumo continúa creciendo y aumenta la generación de residuos. Los vertederos y la contaminación se expanden y los costes de gestión de basura y extracción de recursos siguen aumentando en muchos países.",
-                "imagen":""
+                "imagen":"style/imgs/10.2.png"
             }
         ]
     },
