@@ -1,7 +1,7 @@
 import { datos } from "./datos.js";
 
 let paginaActual = "";
-let puntuacionFinal = 0;
+let puntuacionFinal = 10;
 
 function iniciarJuego(){
     if(paginaActual === ""){
@@ -17,9 +17,13 @@ function mostrarPagina(paginaKey){
     
     if(!fin){
         let contTexto = document.getElementById("contenedorTexto");
+        let p = document.createElement("p");
+        p.className = "contexto";
+        p.innerHTML = pagina.texto.replace(/\n/g, '<br>'); 
         let h2 = document.createElement("h2");
         h2.className = "textoPregunta";
-        h2.textContent = pagina.texto;
+        h2.textContent = pagina.pregunta;
+        contTexto.appendChild(p);
         contTexto.appendChild(h2);
 
         let contRespuestas = document.getElementById("contenedorRespuestas");
@@ -52,8 +56,6 @@ function mostrarPagina(paginaKey){
                 botonRespuesta.className = "botonRespuesta";
                 botonRespuesta.onclick = function(){
                     puntuacionFinal += respuesta.puntuacion;
-                    console.log(puntuacionFinal);
-                    
                     limpiarPagina();
                     monstrarPaginaInfo(paginaActual,posicion);
                 };
@@ -77,11 +79,10 @@ function limpiarPagina(){
 function monstrarPaginaInfo(paginaKey, posicionRespuesta){
     const pagina = datos[paginaKey];
     let contTexto = document.getElementById("contenedorTexto");
-    let h2 = document.createElement("h2");
-
-    h2.textContent = pagina.respuestas[posicionRespuesta].explicacion;
-    contTexto.appendChild(h2);
-    h2.className = "textoExplicacion";
+    let p = document.createElement("p");
+    p.className = "textoExplicacion";
+    p.textContent = pagina.respuestas[posicionRespuesta].explicacion;
+    contTexto.appendChild(p);
 
     /* inicio timeline */ 
     let timeline = document.createElement("button");
@@ -109,44 +110,44 @@ function monstrarPaginaInfo(paginaKey, posicionRespuesta){
 function comprobarFinal(){
     let pagina = datos[paginaActual];
     let salida = false;
+    let final = {};
     //logica para comprobar el final segun la puntuacionFinal
     if(paginaActual != "paginaFinal"){
-        if(puntuacionFinal < 0){
-            limpiarPagina();
-            let contTexto = document.getElementById("contenedorTexto");
-            let anioFinal = pagina.anio;
-            let h2 = document.createElement("h2");
-            h2.textContent = "Has llegado al final. Te has quedado en el año " + anioFinal + " con la biodiversidad destruida.";
-            contTexto.appendChild(h2);
-
-            let contRespuestas = document.getElementById("contenedorRespuestas");   
-            let botonReiniciar = document.createElement("button");
-            botonReiniciar.textContent = "Reiniciar";
-            botonReiniciar.onclick = function(){
-                paginaActual = "pagina0";
-                puntuacionFinal = 0;
-                limpiarPagina();
-                iniciarJuego();
-            };
-            contRespuestas.appendChild(botonReiniciar);
-            salida = true;
+        if(puntuacionFinal <= 0){
+            final = datos["finales"].find( f => f.id === 0);
         }
     }else{
-        let textoFinal = "";
-        limpiarPagina();
+        if(puntuacionFinal > 0 && puntuacionFinal < 80){
+            final = datos["finales"].find( f => f.id === 1);
+        }else if(puntuacionFinal >= 80 && puntuacionFinal < 120){
+            final = datos["finales"].find( f => f.id === 2);
+        }else if(puntuacionFinal >= 120 && puntuacionFinal < 140){
+            final = datos["finales"].find( f => f.id === 3);
+        }else if(puntuacionFinal >= 140 && puntuacionFinal < 170){
+            final = datos["finales"].find( f => f.id === 4);
+        }else if(puntuacionFinal >= 170 && puntuacionFinal <= 200){
+            final = datos["finales"].find( f => f.id === 5);
+        }
+    }
+    if(Object.keys(final).length > 0){
+        
         let contTexto = document.getElementById("contenedorTexto");
-        if(puntuacionFinal >= 0 && puntuacionFinal < 100){
-            textoFinal = datos["finales"][0].texto;
-        }else if(puntuacionFinal >= 100 && puntuacionFinal < 200){
-            textoFinal = datos["finales"][1].texto;
-        }else if(puntuacionFinal >= 200){
-            textoFinal = datos["finales"][2].texto;
+        let h2 = document.createElement("h2");
+        h2.textContent = final.titulo;
+        h2.className = "tituloFinal";
+        contTexto.appendChild(h2);
+
+        if(paginaActual != "paginaFinal"){
+            let h3 = document.createElement("h3");
+            h3.className = "subtituloFinal";
+            h3.textContent = "Has llegadoa al año: " + pagina.anio;
+            contTexto.appendChild(h3);
         }
 
-        let h2 = document.createElement("h2");
-        h2.textContent = textoFinal;
-        h2.className = "textoFinal";
-        contTexto.appendChild(h2);
+        let p = document.createElement("p");
+        p.innerHTML = final.texto.replace(/\n/g, '<br>'); 
+        p.className = "textoFinal";
+        contTexto.appendChild(p);
 
         let contRespuestas = document.getElementById("contenedorRespuestas");   
         let botonReiniciar = document.createElement("button");
@@ -154,7 +155,7 @@ function comprobarFinal(){
         botonReiniciar.textContent = "Volver a empezar";
         botonReiniciar.onclick = function(){
             paginaActual = "pagina0";
-            puntuacionFinal = 0;
+            puntuacionFinal = 10;
             limpiarPagina();
             iniciarJuego();
         };
