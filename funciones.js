@@ -1,7 +1,7 @@
 import { datos } from "./datos.js";
 
 let paginaActual = "";
-let puntuacionFinal = 10;
+let puntuacionFinal = 30;
 
 function iniciarJuego(){
     if(paginaActual === ""){
@@ -84,16 +84,15 @@ function monstrarPaginaInfo(paginaKey, posicionRespuesta){
     p.textContent = pagina.respuestas[posicionRespuesta].explicacion;
     contTexto.appendChild(p);
 
-    /* inicio timeline */ 
-    let timeline = document.createElement("button");
-    timeline.textContent = "Ver Timeline";
-    timeline.className = "botonTimeline";
-    timeline.onclick = function(){
-        alert("Timeline: Año actual: " + pagina.anio);
-    };
-    /* timeline fin */
+// timline eliminado
+    // let timeline = document.createElement("button");
+    // timeline.textContent = "Ver Timeline";
+    // timeline.className = "botonTimeline";
+    // timeline.onclick = function(){
+    //     alert("Timeline: Año actual: " + pagina.anio);
+    // };
 
-    contTexto.appendChild(timeline);
+    // contTexto.appendChild(timeline);
 
     let contRespuestas = document.getElementById("contenedorRespuestas");   
     let botonSiguiente = document.createElement("button");
@@ -117,19 +116,26 @@ function comprobarFinal(){
             final = datos["finales"].find( f => f.id === 0);
         }
     }else{
-        if(puntuacionFinal > 0 && puntuacionFinal < 80){
+        if(puntuacionFinal >= 10 && puntuacionFinal <= 30){
             final = datos["finales"].find( f => f.id === 1);
-        }else if(puntuacionFinal >= 80 && puntuacionFinal < 120){
+
+        }else if(puntuacionFinal >= 40 && puntuacionFinal <= 60){
             final = datos["finales"].find( f => f.id === 2);
-        }else if(puntuacionFinal >= 120 && puntuacionFinal < 140){
+
+        }else if(puntuacionFinal >= 70 && puntuacionFinal <= 90){
             final = datos["finales"].find( f => f.id === 3);
-        }else if(puntuacionFinal >= 140 && puntuacionFinal < 170){
+
+        }else if(puntuacionFinal >= 100 && puntuacionFinal <= 120){
             final = datos["finales"].find( f => f.id === 4);
-        }else if(puntuacionFinal >= 170 && puntuacionFinal <= 200){
+
+        }else if(puntuacionFinal === 130 ){
             final = datos["finales"].find( f => f.id === 5);
         }
     }
     if(Object.keys(final).length > 0){
+        document.body.style.backgroundImage = `url('${final.imagen}')`;
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundPosition = "center";
         
         let contTexto = document.getElementById("contenedorTexto");
         let h2 = document.createElement("h2");
@@ -154,6 +160,7 @@ function comprobarFinal(){
         botonReiniciar.className = "botonReiniciar";
         botonReiniciar.textContent = "Volver a empezar";
         botonReiniciar.onclick = function(){
+            document.body.style.backgroundImage = "";
             paginaActual = "pagina0";
             puntuacionFinal = 10;
             limpiarPagina();
