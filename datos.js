@@ -73,15 +73,15 @@ export const datos ={
         "anio": 2038,
         "respuestas": [
             {
-                "respuesta": "respuesta 1",
+                "respuesta": "Regulación fuerte y prohibiciones.",
                 "puntuacion": 10,
-                "explicacion": "explicacion 1",
+                "explicacion": "Se reduce la contaminación lentamente y surgen industrias de materiales sostenibles, aunque algunos sectores deben reconvertirse.",
                 "imagen": "style/imgs/4.1.png"
             },
             {
-                "respuesta": "respuesta 2",
+                "respuesta": "Mantener producción sin cambios.",
                 "puntuacion": -10,
-                "explicacion": "explicacion 2",
+                "explicacion": "La contaminación aumenta y crecen problemas sanitarios y costes de limpieza.",
                 "imagen": "style/imgs/4.2.png"
             }
         ]
