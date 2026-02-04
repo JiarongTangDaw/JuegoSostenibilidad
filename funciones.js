@@ -7,7 +7,6 @@ function iniciarJuego(){
     if(paginaActual === ""){
         paginaActual = "pagina0";
     }
-    puntuacionFinal = 30;
     mostrarPagina(paginaActual);
 }
 
@@ -144,12 +143,11 @@ function comprobarFinal(){
         h2.className = "tituloFinal";
         contTexto.appendChild(h2);
 
-        if(paginaActual != "paginaFinal"){
-            let h3 = document.createElement("h3");
-            h3.className = "subtituloFinal";
-            h3.textContent = "Has llegadoa al año: " + pagina.anio;
-            contTexto.appendChild(h3);
-        }
+    
+        let h3 = document.createElement("h3");
+        h3.className = "subtituloFinal";
+        h3.textContent = "Has llegado al año: " + pagina.anio;
+        contTexto.appendChild(h3);
 
         let p = document.createElement("p");
         p.innerHTML = final.texto.replace(/\n/g, '<br>'); 
@@ -163,7 +161,7 @@ function comprobarFinal(){
         botonReiniciar.onclick = function(){
             document.body.style.backgroundImage = "";
             paginaActual = "pagina0";
-            puntuacionFinal = 10;
+            puntuacionFinal = 30;
             limpiarPagina();
             iniciarJuego();
         };
