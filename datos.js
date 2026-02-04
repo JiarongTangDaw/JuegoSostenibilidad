@@ -1,6 +1,7 @@
+
 export const datos = {
     "pagina0": {
-        "texto": "Estás en el año 2026, al borde de un desastre climático. Se ha establecido un nuevo orden mundial y el pueblo te ha elegido a ti como presidente.Han establecido su fe en ti para que resuelvas los problemas que afronta el planeta, busca la forma de encontrar un equilibrio entre el bienestar social y el de la biosfera.Debes tomar la decisión que consideres correcta, pero ten cuidado, cada decisión que tomes podrá tener consecuencias catastróficas  para el planeta. ¡Elige tu propia aventura!",
+        "texto": "Estás en el año 2026, al borde de un desastre climático. Se ha establecido un nuevo orden mundial y el pueblo te ha elegido a ti como presidente.Han establecido su fe en ti para que resuelvas los problemas que afronta el planeta, busca la forma de encontrar un equilibrio entre el bienestar social y el de la biosfera.Debes tomar la decisión que consideres correcta pero, ten cuidado, cada decisión que tomes podrá tener consecuencias catastróficas  para el planeta. ¡Elige tu propia aventura!",
         "siguiente": "pagina1",
         "anio": 2029,
         "respuestas": []

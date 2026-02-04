@@ -89,26 +89,23 @@ function monstrarPaginaInfo(paginaKey, posicionRespuesta){
     contTexto.appendChild(p);
     p.className = "textoExplicacion";
 
-    /* inicio timeline */ 
+    /* inicio timeline */
     let timeline = document.createElement("div");
-    timeline.style.background = "color:'white'";
     timeline.className = "timeline";
     contTexto.appendChild(timeline);
     let counterImg = 1;
     for (let index = 0; index < 9; index++) {
         let img = document.createElement("img");
-        img.className = `timelineImg ${counterImg}`;
+        img.className = `timelineImg`;
+        img.id = `icon${counterImg}`;
         timeline.appendChild(img);
         counterImg = counterImg +1;
     };
-    // timeline.onclick = function(){
-    //     alert("Timeline: Año actual: " + pagina.anio);
-    // };
     /* timeline fin */
 
     contTexto.appendChild(timeline);
 
-    let contRespuestas = document.getElementById("contenedorRespuestas");   
+    let contRespuestas = document.getElementById("contenedorRespuestas");
     let botonSiguiente = document.createElement("button");
     botonSiguiente.textContent = "Continuar";
     botonSiguiente.className = "botonSiguiente";
