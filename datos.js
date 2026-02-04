@@ -33,13 +33,13 @@ export const datos = {
                 "respuesta": "respuesta 1",
                 "puntuacion": 10,
                 "explicacion": "explicacion 1",
-                "imagen": ""
+                "imagen": "style/imgs/2.1.png"
             },
             {
                 "respuesta": "respuesta 2",
                 "puntuacion": -10,
                 "explicacion": "explicacion 2",
-                "imagen": ""
+                "imagen": "style/imgs/2.2.png"
             }
         ]
     },
@@ -52,13 +52,13 @@ export const datos = {
                 "respuesta": "respuesta 1",
                 "puntuacion": 10,
                 "explicacion": "explicacion 1",
-                "imagen": ""
+                "imagen": "style/imgs/3.1.png"
             },
             {
                 "respuesta": "respuesta 2",
                 "puntuacion": -10,
                 "explicacion": "explicacion 2",
-                "imagen": ""
+                "imagen": "style/imgs/3.2.png"
             }
         ]
     },
@@ -71,13 +71,13 @@ export const datos = {
                 "respuesta": "respuesta 1",
                 "puntuacion": 10,
                 "explicacion": "explicacion 1",
-                "imagen": ""
+                "imagen": "style/imgs/4.1.png"
             },
             {
                 "respuesta": "respuesta 2",
                 "puntuacion": -10,
                 "explicacion": "explicacion 2",
-                "imagen": ""
+                "imagen": "style/imgs/4.2.png"
             }
         ]
     },
@@ -90,13 +90,13 @@ export const datos = {
                 "respuesta": "respuesta 1",
                 "puntuacion": 10,
                 "explicacion": "explicacion 1",
-                "imagen": ""
+                "imagen": "style/imgs/5.1.png"
             },
             {
                 "respuesta": "respuesta 2",
                 "puntuacion": -10,
                 "explicacion": "explicacion 2",
-                "imagen": ""
+                "imagen": "style/imgs/5.2.png"
             }
         ]
     },
@@ -109,13 +109,13 @@ export const datos = {
                 "respuesta": "respuesta 1",
                 "puntuacion": 10,
                 "explicacion": "explicacion 1",
-                "imagen": ""
+                "imagen": "style/imgs/6.1.png"
             },
             {
                 "respuesta": "respuesta 2",
                 "puntuacion": -10,
                 "explicacion": "explicacion 2",
-                "imagen": ""
+                "imagen": "style/imgs/6.2.png"
             }
         ]
     },
