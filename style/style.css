@@ -1,95 +1,180 @@
-/* Estilos base para el cuerpo */
+/* ===== ESTILO FUTURISTA ECOFRIENDLY ===== */
+/* Compatible con game.html y reutilizable en otras páginas */
+
+/* Fuente futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-image: url('./imgs/bodybckg.jpg');
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #0f2f2f, #050c12 70%);
+  color: #d6ffe9;
+  overflow-x: hidden;
 }
 
-/* Contenedor principal (Card) */
+/* Brillos ambientales eco-tech */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.25;
+  z-index: -1;
+}
+
+body::before {
+  background: #00ffa6;
+  top: -200px;
+  left: -150px;
+}
+
+body::after {
+  background: #00d9ff;
+  bottom: -200px;
+  right: -150px;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
 #principal {
-    background-color: rgba(255, 255, 255, 0.938);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 1200px;
-    text-align: center;
-    justify-items: center;
+  width: 95%;
+  max-width: 900px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(10, 25, 30, 0.55);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 255, 170, 0.3);
+  box-shadow: 0 0 40px rgba(0, 255, 170, 0.15);
+  margin: 30px auto;
 }
 
-/* Textos de preguntas y explicaciones */
-.textoPregunta, .textoExplicacion, .textoFinal {
-    color: #333;
-    margin-bottom: 2rem;
-    line-height: 1.4;
+#contenedorTexto {
+  margin-bottom: 30px;
 }
 
-/* Contenedor de respuestas */
 #contenedorRespuestas {
-    display: flex;
-
-    gap: 15px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Diseño de cada bloque de respuesta */
+/* ===== TEXTOS ===== */
+.contexto {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.textoPregunta {
+  margin-top: 15px;
+  color: #7fffd4;
+  text-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+}
+
+.textoExplicacion {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.tituloFinal {
+  margin-bottom: 15px;
+  color: #7fffd4;
+}
+
+.subtituloFinal {
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+.textoFinal {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ===== BLOQUES DE RESPUESTA ===== */
 .divRespuesta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    transition: transform 0.2s;
+  background: rgba(10, 25, 30, 0.6);
+  border: 1px solid rgba(0, 255, 170, 0.2);
+  border-radius: 16px;
+  padding: 15px;
+  width: 240px;
+  text-align: center;
+  transition: 0.25s ease;
 }
 
 .divRespuesta:hover {
-    background-color: #f9f9f9;
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.25);
 }
 
-/* Imágenes (solo si tienen contenido) */
 .imagenRespuesta {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 8px;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-/* Botones */
-button {
-    padding: 12px 24px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 6px;
-    transition: background-color 0.3s;
-    width: 100%;
-    max-width: 300px;
+/* ===== BOTONES ===== */
+button,
+.botonEmpezar,
+.botonRespuesta,
+.botonSiguiente,
+.botonReiniciar,
+.botonTimeline {
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00ffa6, #00d9ff);
+  color: #002b2b;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(0, 255, 170, 0.35);
 }
 
-/* Colores específicos según clase */
-.botonEmpezar, .botonSiguiente {
-    background-color: #28a745;
-    color: white;
+button:hover,
+.botonEmpezar:hover,
+.botonRespuesta:hover,
+.botonSiguiente:hover,
+.botonReiniciar:hover,
+.botonTimeline:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 255, 170, 0.7);
 }
 
 .botonRespuesta {
-    background-color: #007bff;
-    color: white;
+  width: 100%;
 }
 
-.botonReiniciar {
-    background-color: #dc3545;
-    color: white;
+.botonTimeline {
+  margin-top: 10px;
 }
 
-button:hover {
-    filter: brightness(0.9);
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  #principal {
+    padding: 25px;
+  }
+
+  .divRespuesta {
+    width: 100%;
+  }
+
+  .imagenRespuesta {
+    height: 160px;
+  }
 }
