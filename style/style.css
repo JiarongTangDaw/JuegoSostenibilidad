@@ -1,0 +1,95 @@
+/* Estilos base para el cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('./imgs/bodybckg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor principal (Card) */
+#principal {
+    background-color: rgba(255, 255, 255, 0.938);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    justify-items: center;
+}
+
+/* Textos de preguntas y explicaciones */
+.textoPregunta, .textoExplicacion, .textoFinal {
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+/* Contenedor de respuestas */
+#contenedorRespuestas {
+    display: flex;
+
+    gap: 15px;
+    
+}
+
+/* Diseño de cada bloque de respuesta */
+.divRespuesta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.divRespuesta:hover {
+    background-color: #f9f9f9;
+}
+
+/* Imágenes (solo si tienen contenido) */
+.imagenRespuesta {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/* Botones */
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Colores específicos según clase */
+.botonEmpezar, .botonSiguiente {
+    background-color: #28a745;
+    color: white;
+}
+
+.botonRespuesta {
+    background-color: #007bff;
+    color: white;
+}
+
+.botonReiniciar {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}

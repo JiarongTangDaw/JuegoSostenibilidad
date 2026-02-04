@@ -73,16 +73,16 @@ export const datos ={
         "anio": 2038,
         "respuestas": [
             {
-                "respuesta":"respuesta 1", 
-                "puntuacion": 10, 
-                "explicacion":"explicacion 1",
-                "imagen":""
+                "respuesta": "respuesta 1",
+                "puntuacion": 10,
+                "explicacion": "explicacion 1",
+                "imagen": ""
             },
             {
-                "respuesta":"respuesta 2", 
-                "puntuacion": -10, 
-                "explicacion":"explicacion 2",
-                "imagen":""
+                "respuesta": "respuesta 2",
+                "puntuacion": -10,
+                "explicacion": "explicacion 2",
+                "imagen": ""
             }
         ]
     },

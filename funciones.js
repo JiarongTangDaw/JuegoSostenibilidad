@@ -78,12 +78,22 @@ function limpiarPagina(){
 
 function monstrarPaginaInfo(paginaKey, posicionRespuesta){
     const pagina = datos[paginaKey];
-    paginaActual = pagina.siguiente;
     let contTexto = document.getElementById("contenedorTexto");
     let p = document.createElement("p");
     p.className = "textoExplicacion";
     p.textContent = pagina.respuestas[posicionRespuesta].explicacion;
     contTexto.appendChild(p);
+
+    /* inicio timeline */ 
+    let timeline = document.createElement("button");
+    timeline.textContent = "Ver Timeline";
+    timeline.className = "botonTimeline";
+    timeline.onclick = function(){
+        alert("Timeline: Año actual: " + pagina.anio);
+    };
+    /* timeline fin */
+
+    contTexto.appendChild(timeline);
 
     let contRespuestas = document.getElementById("contenedorRespuestas");   
     let botonSiguiente = document.createElement("button");
