@@ -7,6 +7,7 @@ function iniciarJuego(){
     if(paginaActual === ""){
         paginaActual = "pagina0";
     }
+    puntuacionFinal = 30;
     mostrarPagina(paginaActual);
 }
 
