@@ -2,6 +2,7 @@ import { datos } from "./datos.js";
 
 let paginaActual = "";
 let puntuacionFinal = 0;
+let arrayIconos = [];
 
 function iniciarJuego(){
     if(paginaActual === ""){
